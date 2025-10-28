@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои социальные сети</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0c0c0c, #1a1a2e, #16213e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(25, 25, 35, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4cc9f0;
+            margin: 0 auto 20px;
+            background-color: #2a2a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4cc9f0;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #4cc9f0, #4361ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bio {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-button:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-button i {
+            margin-right: 12px;
+            font-size: 20px;
+            width: 24px;
+        }
+
+        /* Цвета для разных соцсетей */
+        .vk { color: #4a76a8; }
+        .telegram { color: #28a8e9; }
+        .instagram { color: #e4405f; }
+        .faceit { color: #ff5500; }
+        .youtube { color: #ff0000; } 
+
+        footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Аватарка -->
+            <div class="avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            
+            <!-- Имя и описание -->
+            <h1>a1mkooo</h1>
+            <p class="bio">Киберспортсмен | Стример | Контент-мейкер<br>Добро пожаловать на мою страницу!</p>
+            
+            <!-- Ссылки на соцсети -->
+            <div class="links">
+                <a href="https://vk.com/lx2a1m" class="link-button" target="_blank">
+                    <i class="fab fa-vk vk"></i> VK
+                </a>
+                
+                <a href="https://t.me/dvaebanario" class="link-button" target="_blank">
+                    <i class="fab fa-telegram telegram"></i> Telegram
+                </a>
+                
+                <a href="https://instagram.com/a1mkooo" class="link-button" target="_blank">
+                    <i class="fab fa-instagram instagram"></i> Instagram
+                </a>
+                
+                <a href="https://faceit.com/ru/players/a1mkooo" class="link-button" target="_blank">
+                    <i class="fas fa-trophy faceit"></i> FaceIt
+                </a>
+                
+                <a href="https://youtube.com/@a1mkooo304" class="link-button" target="_blank">
+                    <i class="fab fa-youtube youtube"></i> YouTube
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            © 2025 Все права защищены! 
+        </footer>
+    </div>
+</body>
+</html>
